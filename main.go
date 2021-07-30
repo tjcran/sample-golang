@@ -37,7 +37,7 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		logRequest(r)
 		fmt.Fprintf(w, "Hello! you've requested %s\n", r.URL.Path)
-		fmt.Fprintf(w, "This is a sample Golang web application using Coder!)
+		fmt.Fprintf(w, "This is a sample Golang web application using Coder!")
 	})
 
 	http.HandleFunc("/cached", func(w http.ResponseWriter, r *http.Request) {
